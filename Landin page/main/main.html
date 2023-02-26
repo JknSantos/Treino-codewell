@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="container-bg">
+        <div class="bg"></div>
+    </div>
     <nav class="box-nav container">
         <div class="logo-nav">
             <p>spense.</p>
@@ -21,9 +24,9 @@
             </ul>
         </div>
         <div class="login-nav">
-            <a href="#">
-                <p>login</p>
-            </a>
+            <div class="login">
+                    <input type="button" value="Login">
+            </div>
             <input class="btn-started" type="button" value="Get started" onclick="started()">
         </div>
     </nav>
@@ -32,9 +35,9 @@
             <div class="close">
                 <img src="../../SpenseLandingPage/Assets/close.button.svg" alt="Close">
             </div>
-            <div class="bg-form"></div>
             <div class="form">
                 <form method="post">
+                    <div class="btn-close" onclick="started()"><img src="../../SpenseLandingPage/Assets/close.button.svg" alt=""></div>
                     <div class="profile">
                         <img src="../../SpenseLandingPage/Assets/profile_pic.svg" alt="profile">
                     </div>
@@ -46,12 +49,17 @@
                         <label for="login" class="text-style"><img src="../../SpenseLandingPage/Assets/password.svg" alt=""></label>
                         <input type="password" name="password" id="password" placeholder="Password"><br>
                     </div>
-                    <input type="button" value="Login" class="btn-started">
+                    <div class="remember">
+                        <input type="checkbox" name="remember" id="remember" checked>
+                        <p class="text-style">Remember-me</p>
+
+                    </div>
+                    <input type="button" value="Login" class="btn-started" onclick="checkLogin()">
                 </form>
             </div>
             <div class="top-section-left">
                 <div class="top-section-left-title">
-                    <h1 class="title-style">Share your unfiltered thoughts. Get paid.</h1>
+                    <h1 class="title-style">Share your unfiltered <br> thoughts. Get paid.</h1>
                 </div>
                 <div class="top-section-left-text">
                     <p class="text-style">

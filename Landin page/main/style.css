@@ -26,6 +26,7 @@ li{
     justify-content: space-around;
 }
 input.btn-started{
+    cursor: pointer;
     font-size: 12pt;
     font-family: Roboto;
     color: white;
@@ -33,8 +34,12 @@ input.btn-started{
     background-color: black;
     padding: 15px;
     border-radius: 5px;
-    
 }
+input.btn-started:hover{
+    transform: translate(1px, 1px);
+    transition: transform .2s;
+}
+
 .check-list{
     display: flex;
     gap: 10px;
@@ -50,9 +55,28 @@ input.btn-started{
 .close{
     display: none;
 }
-/* .show-close{
+.btn-close{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+.btn-close img{
+    width: 35px;
+}
+.container-bg{
+    position: absolute;
+}
+.bg{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #0000007c;
+}
+.bg-show{
     display: block;
-} */
+}
 .form {
     display: none;
     width: 500px;
@@ -67,22 +91,13 @@ input.btn-started{
     width: 100px;
     margin-top: 25px;
 }
-.bg-form{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #000000ba;
-    height: 100%;
-    z-index: -1; /* TROCAR Z-INDEX PARA 1 QUANDO QUISER APARECER */
-}
 .form-show {
     display: block;
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 888;
+    z-index: 1;
 }
 .form-show label img{
     width: 20px;
@@ -98,7 +113,21 @@ input.btn-started{
     outline: none;
 
 }
-
+.remember{
+    position: relative;
+    display: block;
+    left: -35px;
+    top: 10px;
+}
+.remember input{
+    margin-right: 5px;
+}
+.remember p{
+    display: inline-block;
+    color: #858282;
+    font-size: 11pt;
+    cursor: pointer;
+}
 /*MENU NAV*/
 .box-nav{
     background-color: #f0eeeb;
@@ -125,13 +154,14 @@ input.btn-started{
     align-items: center;
     gap: 15px;
 }
-.login-nav a{
-    text-decoration: none;
-    color: black;
+
+.login-nav .login input{
+    border: none;
+    cursor: pointer;
 }
 /* FIM DO MENU NAV */
 
-/* INICIO DO SECTION TOP */
+/* INICIO DO TOP SECTION */
 #main{
     flex-direction: column;
 }
@@ -140,7 +170,7 @@ input.btn-started{
     justify-content: space-between;
     align-items: center;
     background-color: #f0eeeb;
-    padding: 0 10% 5% 10%;
+    padding: 0% 10% 6% 10%;
     
 }
 .top-section-left{

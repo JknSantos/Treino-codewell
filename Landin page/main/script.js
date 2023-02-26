@@ -22,9 +22,11 @@ document.getElementById('password').addEventListener('keypress', function(event)
 function started() {
     const $emailInput = document.getElementById('email');
     const $form = document.querySelector('.form');
+    const $bg = document.querySelector('.bg')
     
     // Mostrando a forms
     $form.classList.toggle('form-show');
+    $bg.classList.toggle('bg-show');
 
     // Checando se há algo escrito no input de email
     if ($emailInput.value != '') {
