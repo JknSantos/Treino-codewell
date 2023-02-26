@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="box-nav">
+    <nav class="box-nav container">
         <div class="logo-nav">
-            <p>spence.</p>
+            <p>spense.</p>
         </div>
         <div class="list-nav">
             <ul>
@@ -21,43 +21,56 @@
             </ul>
         </div>
         <div class="login-nav">
-            <p>login</p>
-            <input class="bnt-started" type="button" value="Get started" onclick="started()">
+            <a href="#">
+                <p>login</p>
+            </a>
+            <input class="btn-started" type="button" value="Get started" onclick="started()">
         </div>
     </nav>
-    <main id="main">
+    <main id="main" class="container">
         <section class="top-section">
             <div class="form">
                 <form method="post">
-                    <label for="login">User name</label>
-                    <input type="text" name="login" id="login">
-                    <label for="login">Password</label>
-                    <input type="password" name="password" id="password">
+                    <div>
+                        <label for="login" class="text-style">Username:</label>
+                        <input type="text" name="login" id="login"><br>
+                    </div>
+                    <div>
+                        <label for="login" class="text-style">Password:</label>
+                        <input type="password" name="password" id="password"><br>
+                    </div>
                     <input type="button" value="Login">
                 </form>
             </div>
             <div class="top-section-left">
                 <div class="top-section-left-title">
-                    <h1>Share your unfilteres thoughts. Get paid.</h1>
+                    <h1 class="title-style">Share your unfiltered thoughts. Get paid.</h1>
                 </div>
                 <div class="top-section-left-text">
-                    <p>
+                    <p class="text-style">
                         Spence is an open platform for individuals to share thein unfiltered thoughts.
                     </p>
-                    <p>
+                    <p class="text-style">
                         Discuss the topics you love, and get paid for doing just that.
                     </p>
                 </div>
                 <div class="top-section-left-list">
-                    <ul>
-                        <li>Receive 99% off the earnings.</li>
-                        <li>Get paid via aDebit Card, ACH, or Paypal</li>
-                        <li>Whithdraw your earnings anytime.</li>
-                    </ul>
+                        <div class="check-list">
+                            <img src="../../SpenseLandingPage/Assets/Checkmark.svg" alt="Checkmark">
+                            <p class="text-style">Receive 99% off the earnings.</p>
+                        </div>
+                        <div class="check-list">
+                            <img src="../../SpenseLandingPage/Assets/Checkmark.svg" alt="Checkmark">
+                            <p class="text-style">Get paid via aDebit Card, ACH, or Paypal</p>
+                        </div>
+                        <div class="check-list">
+                            <img src="../../SpenseLandingPage/Assets/Checkmark.svg" alt="Checkmark">
+                            <p class="text-style">Whithdraw your earnings anytime.</p>
+                        </div>
                 </div>
                 <div class="top-section-left-submit">
-                    <input type="email" name="email" id="email" placeholder="john@gmail.com">
-                    <input class="bnt-started" type="button" value="Get started" onclick="started()">
+                    <input type="email" name="email" id="email" placeholder="john@exemple.com">
+                    <input class="btn-started" type="button" value="Get started" onclick="started()">
                 </div>
             </div>
             <div class="top-section-right">
@@ -93,14 +106,14 @@
         <section class="middle-section">
             <div class="middle-section-left">
                 <div class="middle-section-left-title">
-                    <h2>Secure your money with Escrow.</h2>
+                    <h2 class="title-style">Secure your money <br> with Escrow.</h2>
                 </div>
                 <div class="middle-section-left-text">
-                    <p>Spence uses Escrow to secure all payments. WE believe Escrow offers the highest level of security for your payments, so you never need yo worry about scams.
+                    <p class="text-style">Spence uses Escrow to secure all payments. We believe Escrow offers the highest level of security for your payments, so you never need yo worry about scams.
                     </p>
                 </div>
                 <div class="middle-section-left-link">
-                    <a href="#">Learn more about Escrow</a>
+                    <a href="#" class="text-style">Learn more about Escrow &#10145;</a>
                 </div>
             </div>
             <div class="middle-section-right">
@@ -113,39 +126,39 @@
             </div>
             <div class="bottom-section-right">
                 <div class="bottom-section-right-title">
-                    <h2>A text editor like no other.</h2>
+                    <h2 class="title-style">A text editor like no other.</h2>
                 </div>
                 <div class="bottom-section-right-text">
-                    <p>Out text editor pulls you into focus mode with it's simplistic design and usability so you can put out your best writings.</p>
+                    <p class="text-style">Out text editor pulls you into focus mode with it's simplistic design and usability so you can put out your best writings.</p>
                 </div>
-                <div class="bottom-section-right-link"><a href="#">Text Editor Live Demo -></a></div>
+                <div class="bottom-section-right-link"><a href="#" class="text-style">Text Editor Live Demo &#10145;</a></div>
             </div>
         </section>
     </main>
     <footer class="footer">
         <div class="container-footer">
-            <h3>spense.</h3>
-            <p>Spence is an open platform for individuals to share their unfiltered thoughts. Discuss the topics you love, and get paid for doing just that.</p>
+            <h3 class="title-style">spense.</h3>
+            <p class="text-style">Spence is an open platform for individuals to share their unfiltered thoughts. Discuss the topics you love, and get paid for doing just that.</p>
         </div>
         <div class="container-footer">
-            <h3>Sitemap</h3>
-            <p>Homepage</p>
+            <h3 class="title-style">Sitemap</h3>
+            <p class="text-style">Homepage</p>
         </div>
         <div class="container-footer">
-            <h3>Resources</h3>
-            <p>Support</p>
-            <p>Contact</p>
-            <p>FAQ</p>
+            <h3 class="title-style">Resources</h3>
+            <p class="text-style">Support</p>
+            <p class="text-style">Contact</p>
+            <p class="text-style">FAQ</p>
         </div>
         <div class="container-footer">
-            <h3>Company</h3>
-            <p>About</p>
-            <p>Customers</p>
-            <p>Blog</p>
+            <h3 class="title-style">Company</h3>
+            <p class="text-style">About</p>
+            <p class="text-style">Customers</p>
+            <p class="text-style">Blog</p>
         </div>
         <div class="container-footer">
-            <h3>Opportubities</h3>
-            <p>Jobs</p>
+            <h3 class="title-style">Opportubities</h3>
+            <p class="text-style">Jobs</p>
         </div>
     </footer>
     <script src="script.js"></script>

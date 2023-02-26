@@ -2,12 +2,231 @@
     font: Roboto - Texto geral
     font: Sunflower - Titulos
 */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Sunflower:wght@500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sunflower:wght@300;500;700&display=swap%27');
+/*CONFIGURAÇÕES PADÃO*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+.text-style{
+    font-family: Roboto;
+    color: #5a5444;
+    line-height: 2em;
+}
+.title-style{
+    font-family: Sunflower;
+    color:#292929;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+input.btn-started{
+    font-size: 12pt;
+    font-family: Roboto;
+    color: white;
+    font-weight: bold;
+    background-color: black;
+    padding: 15px;
+    border-radius: 5px;
+    
+}
+.check-list{
+    display: flex;
+    gap: 10px;
+}
+#email{
+    height: 54px;
+    border: solid 1px #b1afae;
+    border-radius: 5px;
+    text-align: center;
+    color: #b1afae;
+}
+/*FIM DAS CONFIGURAÇÕES*/
 .form {
     display: none;
+    width: 500px;
+    height: 300px;
+    box-shadow: 1px 1px 15px #0000007c;
+    border-radius: 25px;
+    padding: 40px;
+    background-color: #f0eeeb;
+    text-align: center;
 }
 
 .form-show {
     display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justif-ycontent: center;
 }
+.form-show label{
+    color: #5a5444;
+}
+
+/*MENU NAV*/
+.box-nav{
+    background-color: #f0eeeb;
+    justify-content: space-between;
+    padding: 20px 10%;
+    align-items: center;
+}
+.logo-nav{
+    font-family: Sunflower;
+    font-weight: bold;
+    font-size: 15pt;
+}
+.list-nav ul{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+.list-nav ul li, .login-nav p{
+    font-size: 14pt;
+    font-family: Roboto;
+}
+.login-nav{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.login-nav a{
+    text-decoration: none;
+    color: black;
+}
+/* FIM DO MENU NAV */
+
+/* INICIO DO SECTION TOP */
+#main{
+    flex-direction: column;
+}
+.top-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0eeeb;
+    padding: 0 10% 5% 10%;
+    
+}
+.top-section-left{
+    align-items: center;
+}
+.top-section-left-title h1{
+    font-size: 42pt;
+    font-weight: 600;
+}
+
+.top-section-left-text p:first-of-type{
+    line-height: 1em;
+}
+.top-section-left-list img{
+    width: 22px;
+}
+.top-section-left-list p{
+    font-weight: 600;
+}
+.top-section-right img{
+    width: 450px;
+}
+.top-section-left-submit{
+    padding-top: 20px;
+}
+/* FIM DO SECTION TOP */
+
+/* INICIO DO DIVIDER */
+.divider{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    padding: 25px 0;
+}
+.container-img img{
+    width: 110px;
+}
+/* FIM DO DIVIVER */
+
+/* INICIO DA MIDDLE SECTION */
+.middle-section{
+    display: flex;
+    margin: 0 10%;
+    border-radius: 25px;
+    background-color: #f0eeeb;
+    padding: 50px 0px 0 50px;
+}
+.middle-section-left{
+    justify-content: center;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.middle-section-right{
+    width: 50%;
+}
+.middle-section-left-title {
+    font-size: 18pt;
+}
+.middle-section-left-text{
+    padding: 15px 0;
+}
+.middle-section-left-text p{
+    line-height: 1.5em;
+    letter-spacing: 0.1em;
+}
+.middle-section-left-link a{
+    font-weight: 600;
+}
+/* FIM DA MIDDLE SECTION */
+/* INICIO BOTTOM SECTION */
+.bottom-section{
+    display: flex;
+    margin: 0 10%;
+    align-items: center;
+}
+.bottom-section-left{
+    width: 50%;
+}
+.bottom-section-right{
+    width: 50%;
+    padding: 0 30px;
+}
+.bottom-section-right-title h2{
+    font-size: 24pt;
+}
+.bottom-section-right-text p{
+    line-height: 1.5em;
+    letter-spacing: 1px;
+}
+.bottom-section-right-link{
+    padding-top: 25px;
+    font-weight: 600;
+}
+
+/* FIM DO BOTOM SECTION */
+/* INICIO DO FOOTER */
+.footer{
+    background-color: black;
+    display: flex;
+    padding: 0 10%;
+}
+.container-footer{
+    padding: 30px;
+}
+.container-footer h3{
+    color: white;
+}
+.container-footer:first-child p{
+    padding-top: 6px;
+    line-height: 1em;
+}
+.container-footer p{
+    color: #b5b0b0;
+}
+    /* FIM DO FOOTER */
