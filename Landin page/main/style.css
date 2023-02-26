@@ -74,7 +74,7 @@ input.btn-started{
     width: 100%;
     background-color: #000000ba;
     height: 100%;
-    z-index: -1;
+    z-index: -1; /* TROCAR Z-INDEX PARA 1 QUANDO QUISER APARECER */
 }
 .form-show {
     display: block;
