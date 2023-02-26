@@ -47,6 +47,12 @@ input.btn-started{
     color: #b1afae;
 }
 /*FIM DAS CONFIGURAÇÕES*/
+.close{
+    display: none;
+}
+/* .show-close{
+    display: block;
+} */
 .form {
     display: none;
     width: 500px;
@@ -57,16 +63,40 @@ input.btn-started{
     background-color: #f0eeeb;
     text-align: center;
 }
-
+.form input.btn-started{
+    width: 100px;
+    margin-top: 25px;
+}
+.bg-form{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000000ba;
+    height: 100%;
+    z-index: -1;
+}
 .form-show {
     display: block;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 888;
 }
-.form-show label{
-    color: #5a5444;
+.form-show label img{
+    width: 20px;
+}
+.style-input input{
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid #b1afae;
+    background: none;
+    margin-top: 20px;
+}
+.style-input input:focus-visible{
+    outline: none;
+
 }
 
 /*MENU NAV*/
