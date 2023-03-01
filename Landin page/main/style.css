@@ -9,6 +9,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+.burguer-menu{
+    display: none;
+}
 li{
     list-style: none;
 }
@@ -176,8 +179,11 @@ input.btn-started:hover{
 .top-section-left{
     align-items: center;
 }
+.top-section-left-title, .top-section-left-text{
+    margin-bottom: 4%;
+} 
 .top-section-left-title h1{
-    font-size: 42pt;
+    font-size: 4vw;
     font-weight: 600;
 }
 
@@ -191,6 +197,7 @@ input.btn-started:hover{
     font-weight: 600;
 }
 .top-section-right img{
+    width: 100%;
     max-width: 450px;
 }
 .top-section-left-submit{
@@ -247,6 +254,9 @@ input.btn-started:hover{
 }
 .middle-section-right img{
     display: block;  
+    width: 100%;
+    max-width: 438px;
+    margin: 0 auto;
     
 }
 /* FIM DA MIDDLE SECTION */
@@ -258,6 +268,7 @@ input.btn-started:hover{
 }
 .bottom-section-left img{
     box-shadow: 0px 15px 10px -15px #b5b0b0;
+    width: 100%;
 }
 .bottom-section-right{
     padding: 0 3%;
@@ -323,3 +334,25 @@ input.btn-started:hover{
         display: none;
     }
 }
+/* RESPOSIVO PARA MOBILE */
+@media screen and (max-width: 840px){
+    /* titulo responsivo */
+    /* menu responsivo */
+    .list-nav, .login-nav{
+        display: none;
+    }
+    .burguer-menu{
+        display: block;
+        cursor: pointer;
+    }
+    /* fim menu responsivo */
+    .middle-section-right img{
+        max-width: 300px;
+    }
+    
+    /* footer responsivo */
+    .container-footer{
+        padding:30px 0;
+    }
+}
+/* FIM DO RESPONSIVO MOBILE */
