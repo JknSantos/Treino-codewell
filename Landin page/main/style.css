@@ -19,10 +19,12 @@ li{
     font-family: Roboto;
     color: #5a5444;
     line-height: 2em;
+    font-size: 1.1704em;
 }
 .title-style{
     font-family: Sunflower;
     color:#292929;
+    font-size: 1.3376em;
 }
 .container{
     display: flex;
@@ -161,6 +163,7 @@ input.btn-started:hover{
 .login-nav .login input{
     border: none;
     cursor: pointer;
+    font-size: 1.1704em;
 }
 /* FIM DO MENU NAV */
 
@@ -177,13 +180,13 @@ input.btn-started:hover{
     
 }
 .top-section-left{
-    align-items: center;
+    margin-right: 1.25em;
 }
 .top-section-left-title, .top-section-left-text{
     margin-bottom: 4%;
 } 
 .top-section-left-title h1{
-    font-size: 4vw;
+    font-size: 3.7em;
     font-weight: 600;
 }
 
@@ -196,9 +199,12 @@ input.btn-started:hover{
 .top-section-left-list p{
     font-weight: 600;
 }
-.top-section-right img{
+.top-section-right{
     width: 100%;
     max-width: 450px;
+    height: 35.125rem;
+    background:url(../../SpenseLandingPage/Assets/Hero\ Image\ \(Desktop\).png) no-repeat;
+    background-size: 100% 100%;
 }
 .top-section-left-submit{
     padding-top: 20px;
@@ -309,10 +315,29 @@ input.btn-started:hover{
     /* FIM DO FOOTER */
 
 /* RESPOSIVO PARA TABLET */
-@media screen and (max-width: 1240px ){
+@media screen and (max-width: 1268px ){
+    /* top-section */
     .top-section{
         flex-direction: column-reverse; 
     }
+    .top-section-left{
+        width: 100%;
+    }
+    .top-section-right{
+        width: 100%;
+        max-width: 1240px;
+        background: url(../../SpenseLandingPage/Assets/Hero\ Image\ \(Tablet\).png) no-repeat;
+        background-size: 100% 100%;
+        margin-bottom: 2.188em;
+    }
+    .top-section-left-title, .top-section-left-text{
+        margin-bottom: 2%;
+    }
+    .top-section-left .text-style{
+        display: inline;
+        font-size: 1.3376em;
+    }
+    /* fim do top-section */
     .middle-section{
         flex-direction: column;
     }
@@ -335,7 +360,7 @@ input.btn-started:hover{
     }
 }
 /* RESPOSIVO PARA MOBILE */
-@media screen and (max-width: 840px){
+@media screen and (max-width: 980px){
     /* titulo responsivo */
     /* menu responsivo */
     .list-nav, .login-nav{
@@ -349,7 +374,12 @@ input.btn-started:hover{
     .middle-section-right img{
         max-width: 300px;
     }
-    
+    .top-section-right{
+        width: 100%;
+        max-width: 840px;
+        background: url(../../SpenseLandingPage/Assets/Hero\ Image\ \(Tablet\).png) no-repeat;
+        background-size: 100% 100%;
+    }
     /* footer responsivo */
     .container-footer{
         padding:30px 0;
