@@ -404,7 +404,7 @@ input.btn-started:hover{
     .btn-menu-close{
         background-size: 100% 100%;
         position: fixed;
-        right: 10vh;
+        right: 10%;
         background-image: url(../SpenseLandingPage/Assets/close.button.svg);
     }
     /* fim menu responsivo */
