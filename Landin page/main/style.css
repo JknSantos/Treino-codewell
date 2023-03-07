@@ -161,6 +161,7 @@ input.btn-started:hover{
 }
 
 .login-nav .login input{
+    background: none;
     border: none;
     cursor: pointer;
     font-size: 1.1704em;
@@ -363,12 +364,48 @@ input.btn-started:hover{
 @media screen and (max-width: 980px){
     /* titulo responsivo */
     /* menu responsivo */
-    .list-nav, .login-nav{
-        display: none;
-    }
-    .burguer-menu{
+    .bg-show-mobile{
+        width: 50vw;
         display: block;
+        background-color: #b1afae;
+        right: 0;
+    }
+    .list-nav{
+        display: none;
+        position: absolute;
+        top: 25%;
+        right: 0;
+        width: 50%;
+    }
+    .list-nav ul, .show-login-nav{
+        flex-direction: column;
+    }
+    .login-nav{
+        display: none;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 50%;
+        margin-bottom: 1.5rem;
+    }   
+    .show-list-nav, .show-login-nav{
+        display: flex;
+        justify-content: center;
+        position: fixed;
+    }
+    .btn-menu{
+        display: block;
+        width: 24px;
+        height: 20px;
+        background-image: url(../../SpenseLandingPage/Assets/Hamburger\ Menu.svg);
         cursor: pointer;
+        z-index: 1;
+    }
+    .btn-menu-close{
+        background-size: 100% 100%;
+        position: fixed;
+        right: 10vh;
+        background-image: url(../../SpenseLandingPage/Assets/close.button.svg);
     }
     /* fim menu responsivo */
     .middle-section-right img{

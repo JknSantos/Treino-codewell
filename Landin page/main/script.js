@@ -55,3 +55,15 @@ function checkLogin() {
         alert('One of the fields has not been filled in correctly');
     }
 }
+
+// Função para o menu responsivo
+function menu(){
+    const $bg = document.querySelector('.bg');
+    $bg.classList.toggle('bg-show-mobile');
+    const $listNav = document.querySelector('.list-nav');
+    $listNav.classList.toggle('show-list-nav');
+    const $loginNav = document.querySelector('.login-nav');
+    $loginNav.classList.toggle('show-login-nav');
+    const $btnMenu = document.querySelector('.btn-menu');
+    $btnMenu.classList.toggle('btn-menu-close');
+}
