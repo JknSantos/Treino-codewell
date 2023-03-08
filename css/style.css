@@ -431,6 +431,7 @@ input.btn-started:hover{
     }
     .top-section-right{
         width: 100%;
+        height: 45vh;
         max-width: 840px;
         background: url(../SpenseLandingPage/Assets/Hero\ Image\ \(Tablet\).png) no-repeat;
         background-size: 100% 100%;
