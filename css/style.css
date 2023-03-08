@@ -383,7 +383,7 @@ input.btn-started:hover{
     /* titulo responsivo */
     /* menu responsivo */
     .bg-show-mobile{
-        width: 50vw;
+        width: 100vw;
         display: block;
         background-color: #b1afae;
         right: 0;
@@ -408,6 +408,7 @@ input.btn-started:hover{
     }   
     .show-list-nav, .show-login-nav{
         display: flex;
+        width: 100%;
         justify-content: center;
         position: fixed;
     }
