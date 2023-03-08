@@ -59,11 +59,12 @@ function checkLogin() {
 // Função para o menu responsivo
 function menu(){
     const $bg = document.querySelector('.bg');
-    $bg.classList.toggle('bg-show-mobile');
     const $listNav = document.querySelector('.list-nav');
-    $listNav.classList.toggle('show-list-nav');
     const $loginNav = document.querySelector('.login-nav');
-    $loginNav.classList.toggle('show-login-nav');
     const $btnMenu = document.querySelector('.btn-menu');
+
+    $bg.classList.toggle('bg-show-mobile');
+    $listNav.classList.toggle('show-list-nav');
+    $loginNav.classList.toggle('show-login-nav');
     $btnMenu.classList.toggle('btn-menu-close');
 }
