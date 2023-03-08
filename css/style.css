@@ -39,10 +39,7 @@ input.btn-started{
     background-color: black;
     padding: 15px;
     border-radius: 5px;
-}
-input.btn-started:hover{
-    transform: translate(1px, 1px);
-    transition: transform .2s;
+    border: none;
 }
 
 .check-list{
@@ -145,10 +142,17 @@ input.btn-started:hover{
     font-weight: bold;
     font-size: 15pt;
 }
+.logo-nav a{
+    color: #292929;
+    text-decoration: none;
+}
 .list-nav ul{
     display: flex;
     flex-direction: row;
     gap: 12px;
+}
+.list-nav ul li{
+    cursor: pointer;
 }
 .list-nav ul li, .login-nav p{
     font-size: 14pt;
@@ -166,7 +170,21 @@ input.btn-started:hover{
     cursor: pointer;
     font-size: 1.1704em;
 }
-/* FIM DO MENU NAV */
+
+  /* EFEITOS HOVER*/
+
+.list-nav ul li:hover, .logo-nav a:hover, .login input:hover{
+    color: #5a5444;
+}
+input.btn-started:hover{
+    transform: translate(1px, 1px);
+    transition: transform .2s;
+    color: white;
+    background: linear-gradient(#292929c2, #292929);
+    border: none;
+}
+  /* FIM DOS EFEITOS */
+  /* FIM DO MENU NAV */
 
 /* INICIO DO TOP SECTION */
 #main{
